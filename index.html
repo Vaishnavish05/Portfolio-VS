@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi Sharma - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">VS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link resume-download" onclick="downloadResume()">Resume</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hey there! I'm <span class="highlight">Vaishnavi Sharma</span>
+                </h1>
+                <p class="hero-subtitle">Code Whisperer & Digital Problem Solver</p>
+                <p class="hero-description">
+                    I turn coffee into code and bugs into features (sometimes accidentally). 
+                    When I'm not debugging at 2 AM, I'm crafting full-stack magic and teaching machines to think. 
+                    Warning: May contain traces of perfectionism.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="VaishnaviSharma.pdf" class="btn btn-resume" onclick="downloadResume()">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/vaishnavish05/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Vaishnavish05" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:vaishnavi.sh238@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-avatar">
+                        <img src="WhatsApp Image 2025-05-02 at 12.31.32 PM.jpeg" alt="Vaishnavi Sharma" class="profile-image">
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-element" data-tech="React">⚛️</div>
+                        <div class="floating-element" data-tech="Python">🐍</div>
+                        <div class="floating-element" data-tech="JavaScript">🟨</div>
+                        <div class="floating-element" data-tech="Node.js">🟢</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">My Origin Story</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Plot twist: I started my coding journey thinking HTML was a programming language (we’ve all been there, right?). After countless Stack Overflow searches and plenty of “it works on my machine” moments, I’ve grown into a Computer Science student who loves building projects, solving tricky problems, and learning by doing.
+                    </p>
+                    <p>
+                        Right now, I’m pursuing my B.Tech in Computer Science, experimenting with software development, data analysis, and a bit of AI. My superpower? Turning messy problems into cleaner solutions — and yes, I do get way too excited about neat code and tidy Git commits.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Code Battles Won</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Years of Leveling Up</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Cups of Coffee Consumed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <div class="card-content">
+                            <h3>Currently Obsessing Over</h3>
+                            <ul>
+    <li>JavaScript – still figuring out all its quirks, but slowly getting the hang of it</li>
+    <li>Full-Stack Development – building stuff end-to-end and loving the chaos of frontend + backend</li>
+    <li>AI & Machine Learning – experimenting with models and data, learning something new every day</li>
+    <li>Cloud & Deployment – trying to make my apps actually work outside my laptop (real-world vibes)</li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Digital Superpowers</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Pretty Things Maker</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">React.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Behind-the-Scenes Magic</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Express.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Data Whispering & Cloud Surfing</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Swiss Army Knife Collection</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Machine Learning</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Data Analysis</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Hall of Fame (& Learning Experiences)</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <!-- <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a> -->
+                                <a href="https://github.com/Vaishnavish05/spring-realtime-chat" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Real-Time Web Chat App</h3>
+                        <p class="project-description">
+                            Built a full-stack chat application using Spring Boot, STOMP, SockJS, and Thymeleaf. 
+                        Supports real-time messaging with WebSocket-based communication and timestamps. 
+                        Great learning experience in backend + frontend integration, and handling live data.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">WebSocket</span>
+                        <span class="tech-tag">Thymeleaf</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://sentiment-analyzer-nu3ynugamjk5yt5gadukcy.streamlit.app/" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Vaishnavish05/Sentiment-Analyzer" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sentiment Analyzer</h3>
+                        <p class="project-description">
+                            Developed a machine learning pipeline to classify text as positive, neutral, or negative. 
+                            Implemented NLP preprocessing, feature extraction using TF-IDF and CountVectorizer, 
+                            and trained multiple classical models. Random Forest achieved ~70% accuracy.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLTK</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <!-- <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a> -->
+                                <a href="https://github.com/Vaishnavish05/Zomato-PowerBI-Dashboard" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Zomato Restaurant Insights Dashboard</h3>
+                        <p class="project-description">
+                            Created an interactive Power BI dashboard to analyze Zomato restaurant data across countries, 
+                            cities, and cuisines. Visualizations highlight trends in ratings, delivery, and user preferences. 
+                            A practical project for data analysis and actionable business insights.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Excel</span>
+                            <span class="tech-tag">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <!-- <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Plot Twists & Academic Adventures</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Software Engineering Intern</h3>
+                        <p class="timeline-company">Tech Company (The Real World™)</p>
+                        <p class="timeline-date">2023 - Present</p>
+                        <p class="timeline-description">
+                            Survived the transition from "it works on my laptop" to "it works in production" 
+                            (most of the time). Mastered the art of collaborative coding without breaking 
+                            everything, and learned that "quick fix" is an oxymoron in software development.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Bachelor of Technology - Computer Science</h3>
+                        <p class="timeline-company">University of Life & Learning</p>
+                        <p class="timeline-date">2021 - 2025</p>
+                        <p class="timeline-description">
+                            Currently collecting knowledge like Pokémon cards! Mastering the ancient arts of 
+                            Data Structures (making lists feel fancy), Algorithms (solving problems the smart way), 
+                            and Machine Learning (convincing computers they're intelligent).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Full-Stack Development Bootcamp</h3>
+                        <p class="timeline-company">The School of Hard Knocks (Online Edition)</p>
+                        <p class="timeline-date">2022</p>
+                        <p class="timeline-description">
+                            Survived the coding bootcamp experience! Learned to speak fluent React, 
+                            became best friends with Node.js, and discovered that MongoDB is indeed 
+                            not just a really big database. Plot twist: deployment is harder than coding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Create Something Awesome</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Slide Into My DMs (Professionally)</h3>
+                    <p>
+                        Got a cool project? Need someone who can debug with one eye closed? 
+                        Or maybe you just want to chat about why JavaScript is both amazing and terrifying? 
+                        I'm all ears! Fair warning: I respond faster to messages than to compiler errors.
+                    </p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>vaishnavi.sh238@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 96274 35443</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Option 1: Netlify Forms (100% free, 100 submissions/month) -->
+                <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p style="display: none;">
+                        <label>Don't fill this out: <input name="bot-field"></label>
+                    </p>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                
+                <!-- Alternative: EmailJS (completely free, no backend needed) -->
+                <!-- 
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="from_name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="reply_to" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Vaishnavi Sharma. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/vaishnavish05/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/vaishnavish05" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:vaishnavi.sh238@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
